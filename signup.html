@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="styles/auth-style.css">
+    <link rel="stylesheet" href="styles/generic-style.css">
+    <!-- Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Montserra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="signup-script.js" defer></script>
+</head>
+<body>
+    <section class="conatainer" id="signup-container">
+        <div class="auth-logo-div">
+            <a href="header.html">
+                <img src="./assets/monmstr-logo-2.svg" alt="logo">
+            </a>
+        </div>
+        <section class="wraper">
+            <h1 class="title">Sign Up</h1>
+            <form action="" class="" method="post" autocomplete="off">
+                <!-- error msg -->
+                <div class="error-div hidden"></div>
+                <!-- Info personnel -->
+                <section class="form-up form-part-1 current">
+
+                    <section class="up-info">
+                        <div class="info">
+                            <div class="input-div">
+                                <label for="nom">Nom</label>
+                                <input type="text" name="nom" id="nom" class="input" placeholder="Alaoui">
+                            </div>
+                            <div class="input-div">
+                                <label for="prenom">Prenom</label>
+                                <input type="text" name="prenom" id="prenom" class="input" placeholder="Hamid">
+                            </div>
+                        </div>
+
+                        <div class="info">
+                            <div class="input-div">
+                                <label for="cni">CNI</label>
+                                <input type="text" name="cni" id="cni" class="input" placeholder="MO12663">
+                            </div>
+                            <div class="input-div">
+                                <label for="telephone">Telephone</label>
+                                <input type="number" name="telephone" id="telephone" class="input" placeholder="0634657933">
+                            </div>
+                        </div>
+
+                        <div class="info">
+                            <div class="input-div">
+                                <label for="date_n">Date de Naissance</label>
+                                <input type="date" name="date_n" id="date_n" class="input" placeholder="22 Feb 2002">
+                            </div>
+                            <div class="input-div">
+                                <label for="sexe">Sexe</label>
+                                <select name="sexe" id="sexe" class="sexe-select select" aria-placeholder="Male">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="input-div">
+                                <label for="massar">Massar</label>
+                                <input type="text" name="massar" id="massar" class="input" placeholder="M16236632">
+                            </div>
+                            <div class="input-div">
+                                <label for="nationalite">Nationalité</label>
+                                <select name="nationalite" id="nationalite" class="nationalite-select select" aria-placeholder="Marocain">
+                                    <option value="marocain">Marocain</option>
+                                    <option value="algerien">Algérien</option>
+                                    <option value="tunisien">Tunisien</option>
+                                    <option value="égyptien">Égyptien</option>
+                                    <option value="sénégalais">Sénégalais</option>
+                                    <option value="malien">Malien</option>
+                                    <option value="mauritanien">Mauritanien</option>
+                                    <option value="comorien">Comorien</option>
+                                    <option value="djiboutien">Djiboutien</option>
+                                    <option value="gabonais">Gabonais</option>
+                                    <option value="ivoirien">Ivoirien</option>
+                                    <option value="kenyan">Kenyan</option>
+                                    <option value="libyen">Libyen</option>
+                                    <option value="malgache">Malgache</option>
+                                    <option value="marocain">Marocain</option>
+                                    <option value="mauritanien">Mauritanien</option>
+                                    <option value="nigérien">Nigérien</option>
+                                    <option value="soudanais">Soudanais</option>
+                                    <option value="tchadien">Tchadien</option>
+                                    <option value="togolais">Togolais</option>
+                                    <option value="yéménite">Yéménite</option>
+                                    <option value="américain">Américain</option>
+                                    <option value="britannique">Britannique</option>
+                                    <option value="canadien">Canadien</option>
+                                    <option value="chinois">Chinois</option>
+                                    <option value="français">Français</option>
+                                    <option value="allemand">Allemand</option>
+                                    <option value="italien">Italien</option>
+                                    <option value="japonais">Japonais</option>
+                                    <option value="espagnol">Espagnol</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section class="up-connection">
+                        <div class="up-connection-div input-div">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" class="input" placeholder="Alaoui32@gmail.com">
+                        </div>
+                        <div class="up-connection-div input-div">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" class="input">
+                        </div>
+                    </section>
+                </section>
+                <!-- Info académiques  -->
+                <section class="form-up form-part-2 hidden" id="info-academ">
+
+                    <section class="up-info">
+                        <div class="info">
+                            <div class="input-div">
+                                <label for="fac">Faculté</label>
+                                <input type="text" name="fac" id="fac" class="input" placeholder="Faculté des sciences Meknès">
+                            </div>
+                            <div class="input-div">
+                                <label for="date_graduation">Date de Graduation</label>
+                                <input type="date" name="date_graduation" id="date_graduation" class="input" placeholder="12 Feb 2000">
+                            </div>
+                        </div>
+
+                        <div class="info">
+                            <div class="input-div">
+                                <label for="date_premiere_inscription">Date Première Inscription</label>
+                                <input type="date" name="date_premiere_inscription" id="date_premiere_inscription" class="input" placeholder="12 Feb 2000">
+                            </div>
+                            <div class="input-div">
+                                <label for="fil-license">Filière License</label>
+                                <input type="text" name="fil-license" id="fil-license" class="input" placeholder="SMI">
+                            </div>
+                        </div>
+
+                        <div class="info">
+                            <div class="input-div">
+                                <label for="fil-bac">Filière Bac</label>
+                                <input type="text" name="fil-bac" id="fil-bac" class="input" placeholder="PC">
+                            </div>
+                            <div class="input-div">
+                                <label for="moyenne_bac">Moyene Bac</label>
+                                <input type="number" name="moy-bac" id="moy-bac" class="input" placeholder="16.2">    
+                            </div>
+                            <div class="input-div">
+                                <label for="moyenne_lic">Moyene License</label>
+                                <input type="number" name="moy-lic" id="moy-lic" class="input" placeholder="13.5">    
+                            </div>
+                        </div>
+
+                        <div class="info">
+                            <div class="input-div">
+                                <label for="n_s1">Note S1</label>
+                                <input type="number" name="n_s1" id="n_s1" class="input" placeholder="">
+                            </div>
+                            <div class="input-div">
+                                <label for="n_s2">Note S2</label>
+                                <input type="number" name="n_s2" id="n_s2" class="input" placeholder="">
+                            </div>
+                            <div class="input-div">
+                                <label for="n_s3">Note S3</label>
+                                <input type="number" name="n_s3" id="n_s3" class="input" placeholder="">
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="input-div">
+                                <label for="n_s4">Note S4</label>
+                                <input type="number" name="n_s4" id="n_s4" class="input" placeholder="">
+                            </div>
+                            <div class="input-div">
+                                <label for="n_s5">Note S5</label>
+                                <input type="number" name="n_s5" id="n_s5" class="input" placeholder="">
+                            </div>
+                            <div class="input-div">
+                                <label for="n_s6">Note S6</label>
+                                <input type="number" name="n_s6" id="n_s6" class="input" placeholder="">
+                            </div>
+                        </div>
+
+                    </section>
+
+                </section>
+                <!-- Documents académiques -->
+                <section class="form-up form-part-3 hidden" id="doc-academ">
+                    <section class="up-connection">
+                        <div class="up-connection-div input-div">
+                            <label for="docs">Veuillez Entrer Vos Documents ( Format pdf < 10MB ) 
+                                <input type="file" name="docs" id="docs" class="input" placeholder="">
+                                <div class="upload-div input">
+                                    <span class="upload-text"> No file uploaded </span>
+                                    <div class="upload-subdiv">
+                                        <span class="upload-file-name"></span>
+                                        <span class="upload-file-size"></span>
+                                    </div>
+                                    <img src="./assets/upload.svg" alt="upload"></div>
+                            </label>
+                            <span class="docs-msg">Les documents doivent être bien scannés et comportant: L'origine du Baccalauréat, L'origine du diplome, La carte d'identité national et les relevés de note.</span>
+                        </div>
+                    </section>
+
+                </section>
+                <!--  -->
+                <!--  -->
+                <section class="form-down">
+                    <div class="control-div">
+                        <button  class="btn prev submit hidden" id="prev">
+                            <img src="assets/left-icon.svg" alt="sumbit">
+                        </button>
+                        <button type="submit" class="btn submit hidden" id="submit">Submit</button>
+                        <button  class="btn next submit" id="next">
+                            <img src="assets/right-icon.svg" alt="sumbit">
+                        </button>
+                    </div>
+                    <p class="footer-text">Already have an account ? <a href="signin.html" class="link signin-link sign-link">Sign in </a></p>
+                </section>
+            </form>
+        </section>
+    </section>
+</body>
+</html>
